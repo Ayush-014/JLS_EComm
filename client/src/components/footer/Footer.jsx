@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '../index.components.js';
-import { FOOTER } from '../../../constant.jsx';
+import { FOOTER_DATA } from '../../../constant.jsx';
 
 const Footer = () => {
   const renderListItems = (items) => (
@@ -55,7 +55,7 @@ const Footer = () => {
         <div className="w-full mb-8 text-center bg-gray-900 text-white p-6">
           <h3 className="text-xl font-bold mb-4">FOLLOW US</h3>
           <div className="flex justify-center space-x-6">
-            {Object.entries(FOOTER.SOCIAL_MEDIA_HANDLES).map(([platform, data]) => (
+            {Object.entries(FOOTER_DATA.SOCIAL_MEDIA_HANDLES).map(([platform, data]) => (
               <a 
                 key={platform}
                 href={data.url} 
@@ -77,26 +77,26 @@ const Footer = () => {
           {/* render apps */}
           <div className="space-y-4">
             <h3 className="text-lg">DOWNLOAD APP</h3>
-            {renderAppButtons(FOOTER.APPS)}
+            {renderAppButtons(FOOTER_DATA.APPS)}
           </div>
 
           {/* company info */}
           <div className="space-y-4">
             <h3 className="text-lg">OUR COMPANY</h3>
-            {renderListItems(FOOTER.COMPANY)}
+            {renderListItems(FOOTER_DATA.COMPANY)}
           </div>
 
           {/* customerCare */}
           <div className="space-y-4">
             <h3 className="text-lg">CUSTOMER CARE</h3>
-            {renderListItems(FOOTER.CUSTOMER_CARE)}
+            {renderListItems(FOOTER_DATA.CUSTOMER_CARE)}
           </div>
 
           {/* contact */}
           <div className="space-y-6">
             <div className="space-y-4">
               <h3 className="text-lg">CONTACT US</h3>
-              {renderContactInfo(FOOTER.CONTACT)}
+              {renderContactInfo(FOOTER_DATA.CONTACT)}
             </div>
           </div>
 
@@ -105,8 +105,8 @@ const Footer = () => {
             <h3 className="text-lg">CAREERS</h3>
             <p className="text-lg">
               DROP YOUR ENQUIRIES AT<br />
-              <a href={`mailto:${FOOTER.CAREER.email}`} className="hover:font-medium transition-colors">
-                {FOOTER.CAREER.email}
+              <a href={`mailto:${FOOTER_DATA.CAREER.email}`} className="hover:font-medium transition-colors">
+                {FOOTER_DATA.CAREER.email}
               </a>
             </p>
           </div>

@@ -72,12 +72,12 @@ const Navbar = () => {
             </div>
 
             <div className="flex space-x-4">
-              {isLoggedIn ? (
+              {!isLoggedIn ? (
                 <div className="relative group">
                   <button className="p-2 text-gray-700 hover:text-black">
                     <FiUser size={20} />
                   </button>
-                  <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 invisible group-hover:visible">
+                  <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 invisible group-hover:visible transition-all">
                     <Link
                       to="/profile"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"

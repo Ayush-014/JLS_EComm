@@ -14,7 +14,8 @@ function Home() {
             {HOME_DATA.CATEGORIES.map((category) => (
               <CategoryCard 
                 key={category} 
-                title={category} 
+                title={category}
+                backgroundImage="https://img0.junaroad.com/uiprodu/18026647/zoom_0-1633438645.jpg"
                 onClick={() => console.log(`Clicked ${category}`)}
               />
             ))}

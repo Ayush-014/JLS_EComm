@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { Admin, Profile, Login, Home, Signup } from "./pages/pages.index.js";
+import { Admin, Profile, Login, Home, Signup, ProductDetail } from "./pages/pages.index.js";
 import { Toaster } from "react-hot-toast";
 import { ProtectedRoute, Navbar, Footer } from "./components/index.components.js";
 import { useState } from 'react';
@@ -29,9 +29,10 @@ function AppLayout() {
           <Route path="/register" element={<Signup />} />
           
           {/* protected routes */}
-          <Route element={<ProtectedRoute />}>
             <Route path="/profile" element={<Profile />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/product/:productId" element={<ProductDetail />} />
+          <Route element={<ProtectedRoute />}>
           </Route>
         </Routes>
       </main>

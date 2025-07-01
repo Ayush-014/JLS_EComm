@@ -7,6 +7,9 @@ import ProductCard from "./card/ProductCard.jsx"
 import Navbar from "./header/Navbar.jsx"
 import Hero from "./hero/Hero.jsx"
 import { ProtectedRoute } from "./auth/ProtectedRoute.jsx"
+import ImageGallery from "./productDetail/ImageGallery.jsx"
+import QuantitySelector from "./productDetail/QuantitySelector.jsx"
+import SizeSelector from "./productDetail/SizeSelector.jsx"
 
 export {
     Header,
@@ -17,5 +20,8 @@ export {
     ProductCard,
     Navbar,
     Hero,
-    ProtectedRoute
+    ProtectedRoute,
+    ImageGallery,
+    QuantitySelector,
+    SizeSelector
 }

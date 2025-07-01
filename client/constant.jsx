@@ -68,14 +68,37 @@ const HOME_DATA = {
   ],
 }
  const NAVBAR_DATA = {
-   DRESS_CATEGORY: ['New Arrivals', 'Bottoms', 'Lehanga', 'Gown', 'Occasion Wear'],
+   DRESS_CATEGORY: ['New Arrivals', 'Lehanga', 'Gown', 'Occasion Wear'],
    ACCESSORIES_CATEGORY: ['New Arrivals', 'Accessories', 'Ethnic Wear']
  }
 
+const PRODUCTS_DATA = [
+  {
+    id: "2",
+    name: "lorem ipsum dolor sit",
+    price: 1999,
+    originalPrice: 2999,
+    discount: 33,
+    rating: 4,
+    reviewCount: 124,
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, voluptate cum excepturi quae laborum, veritatis quidem necessitatibus reprehenderit sit temporibus quod. Beatae nemo maxime ducimus, rerum distinctio quod at esse!",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    images: [
+    ],
+    details: [
+      "Lorem ipsum dolor sit,",
+      "amet consectetur adipisicing elit",
+      "Cumque doloribus eaque,",
+      "cupiditate quis ipsam mollitia",
+      "voluptates laudantium, id"
+    ]
+  }
 
+];
 
 export {
   FOOTER_DATA,
   HOME_DATA,
   NAVBAR_DATA,
+  PRODUCTS_DATA
 }

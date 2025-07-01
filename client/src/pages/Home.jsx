@@ -8,19 +8,25 @@ function Home() {
       <Hero />
 
       <div className="container mx-auto px-4 py-12">
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Shop by Category</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {HOME_DATA.CATEGORIES.map((category) => (
-              <CategoryCard 
-                key={category} 
-                title={category}
-                backgroundImage="https://img0.junaroad.com/uiprodu/18026647/zoom_0-1633438645.jpg"
-                onClick={() => console.log(`Clicked ${category}`)}
-              />
-            ))}
-          </div>
-        </section>
+        <section className="w-full px-4 mb-16">
+  <h2 className="text-3xl font-bold text-center mb-8">Shop by Category</h2>
+
+  <div className="flex flex-wrap gap-6 justify-between">
+    {HOME_DATA.CATEGORIES.map((category) => (
+      <div
+        key={category}
+        className="flex-1 min-w-[250px] max-w-full sm:basis-[48%] lg:basis-[23%]"
+      >
+        <CategoryCard
+          title={category}
+          backgroundImage="https://img0.junaroad.com/uiprodu/18026647/zoom_0-1633438645.jpg"
+          onClick={() => console.log(`Clicked ${category}`)}
+        />
+      </div>
+    ))}
+  </div>
+</section>
+
 
         <section>
           <h2 className="text-3xl font-bold text-center mb-8">Featured Products</h2>

@@ -8,9 +8,10 @@ import { toast } from 'react-hot-toast';
 import { NAVBAR_DATA } from '../../../constant.jsx';
 
 const Navbar = () => {
-  const [activeTab, setActiveTab] = useState('Dresses');
+  const [activeTab, setActiveTab] = useState('Accessories');
   const [searchQuery, setSearchQuery] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [activeCategory, setActiveCategory] = useState('New Arrivals');
   const dispatch = useDispatch();
   const navigate = useNavigate();
   
@@ -20,6 +21,11 @@ const Navbar = () => {
     const token = localStorage.getItem('accessToken');
     setIsLoggedIn(!!token);
   }, [user]);
+
+  useEffect(() => {
+  setActiveCategory('New Arrivals');
+}, [activeTab]);
+
 
   const handleLogout = async () => {
     try {
@@ -119,32 +125,20 @@ const Navbar = () => {
 
         {/* sec nav */}
         <nav className="flex justify-center overflow-x-auto py-3 hide-scrollbar space-x-6">
-          {activeTab === 'Dresses' ? (
-            <>
-              {NAVBAR_DATA.DRESS_CATEGORY.map((item) => (
-                <Link
-                  key={item}
-                  to={`/category/${item.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="whitespace-nowrap text-sm font-medium text-gray-600 hover:text-black"
-                >
-                  {item}
-                </Link>
-              ))}
-            </>
-          ) : (
-            <>
-              {NAVBAR_DATA.ACCESSORIES_CATEGORY.map((item) => (
-                <Link
-                  key={item}
-                  to={`/category/${item.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="whitespace-nowrap text-sm font-medium text-gray-600 hover:text-black"
-                >
-                  {item}
-                </Link>
-              ))}
-            </>
-          )}
-        </nav>
+  {(activeTab === 'Dresses' ? NAVBAR_DATA.DRESS_CATEGORY : NAVBAR_DATA.ACCESSORIES_CATEGORY).map((item) => (
+    <Link
+      key={item}
+      to={`/category/${item.toLowerCase().replace(/\s+/g, '-')}`}
+      onClick={() => setActiveCategory(item)}
+      className={`whitespace-nowrap text-sm font-medium ${
+        activeCategory === item ? 'text-black border-b-2 border-black' : 'text-gray-600 hover:text-black'
+      }`}
+    >
+      {item}
+    </Link>
+  ))}
+</nav>
+
       </div>
     </header>
   );

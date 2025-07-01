@@ -59,7 +59,7 @@ const FOOTER_DATA = {
 }
 
 const HOME_DATA = {
-  CATEGORIES: ['Lehenga', 'Dresses', 'Gown', 'Accessories'],
+  CATEGORIES: ['Lehenga', 'Gown', 'Accessories'],
   PRODUCTS: [
     { id: 1, name: 'Designer Lehenga', brand: 'JLS', price: 999 },
     { id: 2, name: 'Evening Gown', brand: 'JLS', price: 1299 },
@@ -68,7 +68,7 @@ const HOME_DATA = {
   ],
 }
  const NAVBAR_DATA = {
-   DRESS_CATEGORY: ['New Arrivals', 'Tops', 'Bottoms', 'Lehanga', 'Gown', 'Occasion Wear'],
+   DRESS_CATEGORY: ['New Arrivals', 'Bottoms', 'Lehanga', 'Gown', 'Occasion Wear'],
    ACCESSORIES_CATEGORY: ['New Arrivals', 'Accessories', 'Ethnic Wear']
  }
 

@@ -35,12 +35,12 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm w-full">
-      {/* 1 announcement (welcome) bar */}
+      {/* 1 announcement bar */}
       <div className="bg-black text-white text-center py-2 px-4 text-sm">
         <p>Free shipping on orders over ₹5,000 | Use code WELCOME10 for 10% off</p>
       </div>
 
-      {/* main div bar */}
+      {/* main */}
       <div className="container mx-auto px-4">
         {/* logo search user profile etc*/}
         <div className="flex items-center justify-between py-4 border-b">

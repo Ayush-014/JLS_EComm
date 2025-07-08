@@ -32,7 +32,7 @@ function AppLayout() {
 
             <Route path="/profile" element={<Profile />} />
             <Route path="/admin" element={<Admin />} />
-            <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/wishlist" element={<Wishlist wishlist={WISHLISTDATA} />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/product/:productId" element={<ProductDetail />} />
           <Route element={<ProtectedRoute />}>

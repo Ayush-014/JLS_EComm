@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { Admin, Profile, Login, Home, Signup, ProductDetail, Wishlist, Cart } from "./pages/pages.index.js";
+import { Admin, Profile, Login, Home, Signup, ProductDetail, Wishlist, Cart, EthnicWear } from "./pages/pages.index.js";
 import { Toaster } from "react-hot-toast";
 import { ProtectedRoute, Navbar, Footer } from "./components/index.components.js";
 import { useState } from 'react';
-import { WISHLISTDATA } from "../constant.jsx"
+import { WISHLISTDATA, CARTITEMS, ETHNICWEARDATA } from "../constant.jsx"
 
 function AppLayout() {
   const location = useLocation();
@@ -32,8 +32,12 @@ function AppLayout() {
 
             <Route path="/profile" element={<Profile />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/category/ethnic-wear" element={<EthnicWear products={ETHNICWEARDATA} />} />
             <Route path="/wishlist" element={<Wishlist wishlist={WISHLISTDATA} />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/cart" element={<Cart
+                                cartItems={CARTITEMS}
+                                onRemove={(id) => console.log("Remove item", id)}
+                                onCheckout={() => console.log("Checkout triggered")} />} />
             <Route path="/product/:productId" element={<ProductDetail />} />
           <Route element={<ProtectedRoute />}>
           </Route>

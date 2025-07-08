@@ -113,10 +113,56 @@ const WISHLISTDATA = [
   },
 ];
 
+const CARTITEMS = [
+  {
+    id: 1,
+    title: "Embroidered Anarkali",
+    price: "1399",
+    image: "",
+    brand: "Global Desi"
+  },
+  {
+    id: 2,
+    title: "Men's Formal Blazer",
+    price: "1799",
+    image: "",
+    brand: "Arrow"
+  }
+];
+
+const ETHNICWEARDATA = [
+    {
+      id: 1,
+      title: "Silk Saree with Zari Work",
+      price: "1299",
+      image: "",
+      brand: "Biba",
+      category: "Sarees",
+    },
+    {
+      id: 2,
+      title: "Velvet Lehenga with Dupatta",
+      price: "2499",
+      image: "",
+      brand: "Sabyasachi",
+      category: "Lehengas",
+    },
+    {
+      id: 3,
+      title: "Georgette Gown",
+      price: "1699",
+      image: "",
+      brand: "Anita Dongre",
+      category: "Gowns",
+    }
+];
+
 export {
   FOOTER_DATA,
   HOME_DATA,
   NAVBAR_DATA,
   PRODUCTS_DATA,
-  WISHLISTDATA
+  WISHLISTDATA,
+  CARTITEMS,
+  ETHNICWEARDATA
 }

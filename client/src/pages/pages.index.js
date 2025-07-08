@@ -8,6 +8,7 @@ import Home from "./user/Home.jsx"
 import ProductDetail from "./user/ProductDetail.jsx"
 import Wishlist from "./user/Wishlist.jsx"
 import Cart from "./user/Cart.jsx"
+import EthnicWear from "./user/EthnicWear.jsx"
 
 export {
     Home,
@@ -17,5 +18,6 @@ export {
     Admin,
     ProductDetail,
     Wishlist,
-    Cart
+    Cart,
+    EthnicWear
 }

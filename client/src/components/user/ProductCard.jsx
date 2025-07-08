@@ -4,7 +4,7 @@ export default function ProductCard ({ product }) {
     return (
       <div className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
         <div className="h-64 bg-gray-200 relative">
-          {/* Product image would go here */}
+          {/* img */}
           <div className="absolute top-2 right-2 bg-white rounded-full p-2">
             ♡
           </div>

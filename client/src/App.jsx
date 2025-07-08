@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { Admin, Profile, Login, Home, Signup, ProductDetail } from "./pages/pages.index.js";
+import { Admin, Profile, Login, Home, Signup, ProductDetail, Wishlist, Cart } from "./pages/pages.index.js";
 import { Toaster } from "react-hot-toast";
 import { ProtectedRoute, Navbar, Footer } from "./components/index.components.js";
 import { useState } from 'react';
+import { WISHLISTDATA } from "../constant.jsx"
 
 function AppLayout() {
   const location = useLocation();
@@ -28,9 +29,11 @@ function AppLayout() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Signup />} />
           
-          {/* protected routes */}
+
             <Route path="/profile" element={<Profile />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/product/:productId" element={<ProductDetail />} />
           <Route element={<ProtectedRoute />}>
           </Route>

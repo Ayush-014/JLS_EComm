@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { Button, SizeSelector, QuantitySelector, ImageGallery } from "../components/index.components.js";
-import { PRODUCTS_DATA } from "../../constant.jsx";
+import { Button, SizeSelector, QuantitySelector, ImageGallery } from "../../components/index.components.js";
+import { PRODUCTS_DATA } from "../../../constant.jsx";
 
 function ProductDetail() {
   const { productId } = useParams();

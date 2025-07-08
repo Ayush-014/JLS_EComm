@@ -1,5 +1,5 @@
-import { Hero, CategoryCard, ProductCard } from "../components/index.components.js"
-import { HOME_DATA } from "../../constant.jsx"
+import { Hero, CategoryCard, ProductCard } from "../../components/index.components.js"
+import { HOME_DATA } from "../../../constant.jsx"
 import { Link } from "react-router-dom"
 
 function Home() {

@@ -1,18 +1,16 @@
-import Header from "./header/Header.jsx"
-import Footer from "./footer/Footer.jsx"
-import HeroCard from "./card/HeroCard.jsx"
-import Button from "./button/Button.jsx"
-import CategoryCard from "./card/CategoryCard.jsx"
-import ProductCard from "./card/ProductCard.jsx"
-import Navbar from "./header/Navbar.jsx"
-import Hero from "./hero/Hero.jsx"
+import Navbar from "./common/Navbar.jsx"
+import Footer from "./common/Footer.jsx"
+import Button from "./common/Button.jsx"
 import { ProtectedRoute } from "./auth/ProtectedRoute.jsx"
-import ImageGallery from "./productDetail/ImageGallery.jsx"
-import QuantitySelector from "./productDetail/QuantitySelector.jsx"
-import SizeSelector from "./productDetail/SizeSelector.jsx"
+import HeroCard from "./user/HeroCard.jsx"
+import CategoryCard from "./user/CategoryCard.jsx"
+import ProductCard from "./user/ProductCard.jsx"
+import Hero from "./user/Hero.jsx"
+import ImageGallery from "./user/ImageGallery.jsx"
+import QuantitySelector from "./user/QuantitySelector.jsx"
+import SizeSelector from "./user/SizeSelector.jsx"
 
 export {
-    Header,
     Footer,
     HeroCard,
     Button,

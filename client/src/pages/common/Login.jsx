@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { setCredentials } from "../features/auth/authSlice";
-import API from "../services/api";
+import { setCredentials } from "../../features/auth/authSlice";
+import API from "../../services/api";
 import { toast } from "react-hot-toast";
 
 const Login = () => {

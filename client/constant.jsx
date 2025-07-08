@@ -96,9 +96,27 @@ const PRODUCTS_DATA = [
 
 ];
 
+const WISHLISTDATA = [
+  {
+    id: 101,
+    title: "Evening Gown",
+    image: "",
+    price: "₹799",
+    brand: "Zara",
+  },
+  {
+    id: 102,
+    title: "Blazer Set",
+    image: "",
+    price: "₹999",
+    brand: "H&M",
+  },
+];
+
 export {
   FOOTER_DATA,
   HOME_DATA,
   NAVBAR_DATA,
-  PRODUCTS_DATA
+  PRODUCTS_DATA,
+  WISHLISTDATA
 }

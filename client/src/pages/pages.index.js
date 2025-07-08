@@ -8,7 +8,7 @@ import Home from "./user/Home.jsx"
 import ProductDetail from "./user/ProductDetail.jsx"
 import Wishlist from "./user/Wishlist.jsx"
 import Cart from "./user/Cart.jsx"
-import EthnicWear from "./user/EthnicWear.jsx"
+import CategoryDisplay from "./user/CategoryDisplay.jsx"
 
 export {
     Home,
@@ -19,5 +19,5 @@ export {
     ProductDetail,
     Wishlist,
     Cart,
-    EthnicWear
+    CategoryDisplay
 }

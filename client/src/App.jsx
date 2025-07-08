@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { Admin, Profile, Login, Home, Signup, ProductDetail, Wishlist, Cart, EthnicWear } from "./pages/pages.index.js";
+import { Admin, Profile, Login, Home, Signup, ProductDetail, Wishlist, Cart, CategoryDisplay } from "./pages/pages.index.js";
 import { Toaster } from "react-hot-toast";
 import { ProtectedRoute, Navbar, Footer } from "./components/index.components.js";
 import { useState } from 'react';
@@ -32,7 +32,7 @@ function AppLayout() {
 
             <Route path="/profile" element={<Profile />} />
             <Route path="/admin" element={<Admin />} />
-            <Route path="/category/ethnic-wear" element={<EthnicWear products={ETHNICWEARDATA} />} />
+            <Route path="/category/ethnic-wear" element={<CategoryDisplay products={ETHNICWEARDATA} />} />
             <Route path="/wishlist" element={<Wishlist wishlist={WISHLISTDATA} />} />
             <Route path="/cart" element={<Cart
                                 cartItems={CARTITEMS}
